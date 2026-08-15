@@ -91,7 +91,7 @@ public class TicketManager
     // so GetAllTickets() returns a defensive copy instead.
     public List<Ticket> GetAllTickets()
     {
-        return _tickets;
+        return new List<Ticket> (_tickets);
     }
 
     // Returns only tickets whose PriorityLevel is "Critical" or "High".
