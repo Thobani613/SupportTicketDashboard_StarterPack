@@ -99,6 +99,13 @@ public class TicketManager
     {
         var result = new List<Ticket>();
         // TODO: Loop through _tickets and add any ticket with PriorityLevel
+        foreach (var ticket in _tickets)
+        {
+            if(ticket.PriorityLevel == "Critical"  || ticket.PriorityLevel == "High")
+            {
+                result.Add(ticket);
+            }
+        }
         // "Critical" or "High" to result.
         return result;
     }
