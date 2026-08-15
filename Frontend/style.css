@@ -24,6 +24,7 @@ body {
   background-color: #1f2933;
   color: #ffffff;
   padding: 16px 32px;
+  display: flex;
 }
 
 .dashboard-header h1 {
@@ -33,6 +34,7 @@ body {
 /* TODO: The filter buttons are stacking vertically instead of sitting in a row. */
 .filter-panel {
   gap: 8px;
+  display: flex;
 }
 
 .filter-btn {
